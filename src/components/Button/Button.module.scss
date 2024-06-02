@@ -1,0 +1,34 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: $button-linear;
+  border: 3px solid $green;
+  box-shadow: 0 0 0 4px $shadow-green;
+  border-radius: 16px;
+  height: 48px;
+  padding: 0 28px 0 16px;
+  color: white;
+
+  font-size: 16px;
+  line-height: 100%;
+
+  cursor: pointer;
+  transition: 0.1s;
+  svg {
+    color: $green;
+  }
+
+  &:hover {
+    border-width: 4px;
+    box-shadow: 0 0 0 6px $shadow-green;
+    background-color: $button-hover-linear;
+  }
+
+  &:active {
+    border-width: 2px;
+    box-shadow: 0 0 0 4px $shadow-green;
+    background-color: $button-active-linear;
+  }
+}
