@@ -1,10 +1,8 @@
 import styles from './PersonAcceptIcon.module.scss'
 import {FC} from 'react';
 
-export interface IPersonAcceptIconProps {
-}
 
-export const PersonAcceptIcon: FC<IPersonAcceptIconProps> = () => {
+export const PersonAcceptIcon: FC = () => {
     return (
         <svg className={styles['person-accept-icon']} viewBox="0 0 19 18">
             <path

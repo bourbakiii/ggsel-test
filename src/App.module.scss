@@ -4,10 +4,18 @@
   justify-content: center;
   flex-direction: column;
   gap: 12px;
+  width: max-content;
+  margin: 0 auto;
 }
 
 .page-title {
   margin-bottom: 36px;
+  font-size: 24px;
+  align-self: flex-start;
+  
+  @media screen and (max-width: 600px) {
+    margin-bottom: 32px;
+  }
 }
 
 .page-content {
@@ -31,6 +39,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
 
+    @media screen and (max-width: 1150px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 
