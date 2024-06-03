@@ -1,6 +1,7 @@
 .card {
   position: relative;
-  width: 419px;
+  width:100%;
+  max-width: 419px;
   color: white;
   transition: 0.25s;
   padding: 2px;
@@ -13,11 +14,11 @@
 
 
   @media screen and (max-width: 1330px) {
-    width: 350px
+    max-width: 350px;
   }
 
   @media screen and (max-width: 1330px) {
-    width: 328px;
+    max-width: 328px;
   }
 
   &:hover {
@@ -49,12 +50,14 @@
   }
 
   &-text {
+    position: relative;
     font-size: 20px;
     line-height: 120%;
 
     transition: 0.25s;
 
     height: max-content;
+    z-index: 2;
   }
 
   &-image {
@@ -73,8 +76,8 @@
     
     @media screen and (max-width: 1150px) {
       transform: rotate(90deg) scale(1, -1);
-      right: 0 !important;
-      bottom: -50px;
+      right: -20px;
+      bottom: -20px;
       top: auto;
     }
   }

@@ -1,11 +1,12 @@
 .page {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  gap: 12px;
-  width: max-content;
+  align-items: center;
+
+  padding: 12px;
   margin: 0 auto;
+  max-width: 100%;
+  width: max-content;
 }
 
 .page-title {
@@ -18,7 +19,9 @@
   }
 }
 
-.page-content {
+.page-cards{
+  max-width: 100%;
+  width:100%;
   background-image: linear-gradient(180deg, rgba(107, 125, 222, 0.12) 0%, #2921A5 100%),
   linear-gradient(180deg, rgba(203, 209, 240), rgba(108, 121, 197));
 

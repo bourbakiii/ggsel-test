@@ -7,19 +7,22 @@ import classNames from "classnames";
 function App() {
     return (
         <main className={styles['page']}>
-            <h1 className={classNames(styles['page-title'], 'roboto-bold')}>Зарабатывайте вместе с нами</h1>
-            <div className={styles['page-content']}>
-                <div className={styles['page-content-inner']}>
-                <Card number={1} text="Получите<br/>партнерскую ссылку" variant='blue' image='/blue-card.svg' withArrow={true}/>
-                <Card number={2} text=" Расскажите<br/>iiii.COM" variant='purple' image='/purple-card.svg' withArrow={true}/>
-                <Card number={3} text=" Получайте хороший процент<br/>от покупок по вашей ссылке!" variant='green'
-                      image='/green-card.svg'/>
+                <h1 className={classNames(styles['page-title'], 'roboto-bold')}>Зарабатывайте вместе с нами</h1>
+                <div className={styles['page-cards']}>
+                    <div className={styles['page-cards-inner']}>
+                        <Card number={1} text="Получите<br/>партнерскую ссылку" variant='blue' image='/blue-card.svg'
+                              withArrow={true}/>
+                        <Card number={2} text=" Расскажите<br/>iiii.COM" variant='purple' image='/purple-card.svg'
+                              withArrow={true}/>
+                        <Card number={3} text=" Получайте хороший процент<br/>от покупок по вашей ссылке!"
+                              variant='green'
+                              image='/green-card.svg'/>
+                    </div>
                 </div>
-            </div>
-            <Button className={styles['page-button']}>
-                <PersonAcceptIcon/>
-                Стать партнером
-            </Button>
+                <Button className={styles['page-button']}>
+                    <PersonAcceptIcon/>
+                    Стать партнером
+                </Button>
         </main>
     )
 }
